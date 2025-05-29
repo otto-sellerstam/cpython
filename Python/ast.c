@@ -1232,6 +1232,8 @@ ast_for_comp_op(struct compiling *c, const node *n)
                 return Lt;
             case GREATER:
                 return Gt;
+            case ALMOSTEQUAL:   // Added to catch token.
+                return AlE;     // Added to return the AST node.
             case EQEQUAL:                       /* == */
                 return Eq;
             case LESSEQUAL:
